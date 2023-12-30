@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "dev": "vite dev --config vite.config.js",
+    "share": "cloudflared tunnel --url http://localhost:50055"
+  },
+  "devDependencies": {
+    "vite": "^5.0.10"
+  }
+}
