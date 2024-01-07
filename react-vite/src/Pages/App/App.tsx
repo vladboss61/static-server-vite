@@ -28,11 +28,19 @@ const App = () => {
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
-          <button onClick={() => navigate('home')}>Home</button>
+        
+        <button onClick={() => navigate('home')}>
+          Home
+        </button>
+        
+        <button onClick={() => navigate('units')}>
+          Units
+        </button>
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
       </div>
+      {/* Render child routes here. / (default index <Content></Content>) or <Units></Units> */}
       <Outlet/>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more

@@ -8,20 +8,24 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import Units from './Pages/Units/Units.tsx'
 
 const router = createBrowserRouter([{
   path: '/',
   element: <App/>,
   children: [{
     index: true,
-    path: 'content',
     element: <div> Content </div>
+  },
+  {
+    path: 'units',
+    element: <Units></Units>
   }]
 },
 {
   path: "home",
   element: <Home/>
-}])
+}]);
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
