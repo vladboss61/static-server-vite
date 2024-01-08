@@ -21,7 +21,13 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/vans" element={<Vans />} />
           <Route path="/vans/:id" element={<VanDetail />} />
-          
+
+          {/*
+          <Route path="vans">
+            <Route index element={<Vans />} />
+            <Route path=":id" element={<VanDetail />} />
+          </Route> */}
+
           {/* 
           Challenge: 
           1. Turn the "/host" path into a parent route and nest
